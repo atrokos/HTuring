@@ -1,0 +1,8 @@
+; This is a example of a Turing machine that checks if all letters on the tape are "a"s only.
+; Notation:
+; Every state is defined like this: <Current state name> <current character> <to replace> <move on tape> <next state>
+; The machine always starts at the state Start
+
+State Start a a -> Start 
+State Start # # - Success
+State Start _ _ - Fail
